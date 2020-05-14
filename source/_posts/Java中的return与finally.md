@@ -4,7 +4,7 @@ id: return-and-finally-in-java
 date: 2019-09-22 17:07:45
 updated: 2019-09-22 17:07:45
 categories:
-  - 人类的本质是复读机
+  - 如何精致地拧螺丝
 tags:
   - java
   - exception
@@ -203,6 +203,8 @@ finally-2, a = 2
 2. 对于可变对象，finally 修改可变对象内部的值，能够影响到 return 的结果
 3. 对于不可变对象，finally 中修改不能影响到 return 的结果
 4. finally 中的 return 语句可以修改最终要 return 的数据的地址。
+
+补充：根据二面面试官反馈，finally 中不建议使用 return，因为会造成返回结果的不稳定性，即有时返回的是 catch 里的 return，有时返回的是 finally 里的 return，具体原因本人尚不得知，待后续研究。
 
 ### 参考资料
 
