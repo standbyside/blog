@@ -14,7 +14,7 @@ tags:
 
 [原题链接](https://leetcode-cn.com/problems/rank-scores/)
 
-```
+```sql
 SELECT
     a.score,
     @rowNum := @rowNum + 1 AS rank
@@ -26,7 +26,7 @@ FROM scores a,
 
 [原题链接](https://leetcode-cn.com/problems/consecutive-numbers/comments/)
 
-```
+```sql
 SELECT 
     DISTINCT a.num 
 FROM ( 
@@ -44,7 +44,7 @@ WHERE a.count >= 3;
 
 [原题链接](https://leetcode-cn.com/problems/delete-duplicate-emails/)
 
-```
+```sql
 DELETE FROM person WHERE id NOT IN ( 
     SELECT t.id FROM (
         SELECT MIN(id) AS id FROM person GROUP BY email 

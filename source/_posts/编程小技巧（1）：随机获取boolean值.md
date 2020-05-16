@@ -14,19 +14,19 @@ tags:
 
 一般来说最先想到什么呢？获取随机数判断是否满足某个条件。
 
-```
+```java
 boolean b = new Random().nextInt(1) == 0;
 ```
 既然看到了 Random，自然就会想有没有直接的随机获取boolean值方式呢？有的。
 
-```
+```java
 boolean b = new Random().nextBoolean();
 ```
 但是"年会现场review抽奖代码"事件告诉我们，这些都不是真随机。
 
 那这位同事是怎么写的呢？
 
-```
+```java
 boolean b = (System.currentTimeMillis() & 1) != 1
 ```
 1的二进制是00000001，根据&运算的定义，两个位全部为1结果才为1，也就是无论 System.currentTimeMillis() 是多少，运算结果只能是0或1。

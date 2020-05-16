@@ -9,7 +9,7 @@ tags:
   - idea
 ---
 
-### 1. plugins 搜索不出来
+### plugins 搜索不出来
 
 #### 现象描述：
 

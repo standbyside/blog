@@ -16,7 +16,7 @@ tags:
 
 #### producer项目
 
-```
+```java
 /**
  * Fanout模式生产者.
  */
@@ -50,7 +50,7 @@ public class FanoutProducer {
 
 #### consumer项目
 
-```
+```java
 /**
  * Fanout模式消费者.
  */

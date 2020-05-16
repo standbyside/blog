@@ -10,13 +10,13 @@ tags:
 ---
 众所周知，当我们用MySQL执行SQL语句时，执行顺序不一定会像我们所写的那样运行。MySQL中存在优化器，会重写我们的SQL，那如何查看优化后的SQL呢？格式如下：
 
-```
+```sql
 EXPLAIN <你的SQL>;
 SHOW WARNINGS;
 ```
 例如：
 
-```
+```sql
 EXPLAIN SELECT name FROM t_product WHERE code IN (SELECT product_code FROM t_order);
 SHOW WARNINGS;
 ```
@@ -24,7 +24,7 @@ SHOW WARNINGS;
 
 第二句SHOW WARNINGS表示显示上一句的警告，所以一定要和上一句一起运行，我们要查看的优化后语句就在SHOW WARNINGS运行后显示的result的message字段里
 
-```
+```sql
 /* select#1 */ 
 select `mytest`.`t_product`.`name` AS `name` 
 from `mytest`.`t_product` 

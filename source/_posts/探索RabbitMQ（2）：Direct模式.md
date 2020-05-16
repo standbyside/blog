@@ -28,7 +28,7 @@ tags:
 
 #### producer 项目代码
 
-```
+```java
 /**
  * Direct模式生产者.
  */
@@ -61,7 +61,7 @@ public class DirectProducer {
 
 #### consumer 项目代码
 
-```
+```java
 /**
  * Direct模式消费者.
  */
@@ -95,7 +95,7 @@ public class DirectConsumer {
 
 至此，一个简单的Direct模式的队列通信就写好了，我们再写一个controller来触发这个消息发送
 
-```
+```java
 @RestController
 @RequestMapping("/test")
 public class TestController {
@@ -181,7 +181,7 @@ Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol 
 
 我们将consumer代码修改如下
 
-```
+```java
 /**
  * Direct模式消费者.
  */

@@ -22,7 +22,7 @@ tags:
 
 #### producer 项目
 
-```
+```java
 /**
  * Topic模式生产者.
  */
@@ -76,7 +76,7 @@ public class TopicProducer {
 ```
 #### consumer 项目
 
-```
+```java
 /**
  * Topic模式消费者.
  */
@@ -137,7 +137,7 @@ template.convertAndSend(TOPIC_EXCHANGE_NAME, TOPIC_QUEUE_NAME, message);
 
 #### producer 代码
 
-```
+```java
 /**
  * queue.
  */
@@ -170,7 +170,7 @@ public void send2() {
 
 #### consumer 代码
 
-```
+```java
 /**
  * queue.
  */

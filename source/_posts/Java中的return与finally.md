@@ -25,7 +25,7 @@ tags:
 ### finally 和 return 谁先执行
 
 运行下面代码：
-```
+```java
 public static void main(String[] args) {
     System.out.println(test());
 }
@@ -59,7 +59,7 @@ finally
 #### 示例1
 
 首先我们让 catch 和 finally 都对返回结果 a 进行修改
-```
+```java
 public static int test() {
     int a = 0;
     try {
@@ -91,7 +91,7 @@ finally-2, a = 2
 #### 示例2
 
 我们仍然让 catch 和 finally 都对返回结果 s 进行修改，但是这次和 示例1 不同的是，s 是一个内部可变的对象，而不是一个基本类型
-```
+```java
 public static StringBuilder test() {
     StringBuilder s = new StringBuilder("test ");
     try {
@@ -128,7 +128,7 @@ test catch finally
 #### 示例3
 
 此示例在示例1的基础上多加了个 change() 方法，修改了 
-```
+```java
 public static int test() {
     int a = 0;
     try {
@@ -167,7 +167,7 @@ finally-2, a = 2
 #### 示例4
 
 此示例在示例1的基础上多加了 
-```
+```java
 public static int test() {
     int a = 0;
     try {

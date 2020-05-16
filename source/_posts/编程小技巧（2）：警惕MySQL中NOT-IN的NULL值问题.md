@@ -11,7 +11,7 @@ tags:
 
 以下四条 SQL 语句中，哪些能查出 1 来？
 
-```
+```sql
 SELECT 1 FROM dual WHERE 1 IN (1, null);
 SELECT 1 FROM dual WHERE 1 IN (2, null);
 SELECT 1 FROM dual WHERE 1 NOT IN (1, null);
@@ -26,7 +26,7 @@ SELECT 1 FROM dual WHERE 1 NOT IN (2, null);
 
 存在表 table\_b，列 id 中值为1，2，null。
 
-```
+```sql
 SELECT a.id FROM table_a a WHERE NOT EXISTS (
     SELECT 1 FROM table_b b WHERE b.id = a.id
 );
